@@ -8,8 +8,13 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class MainController {
 
-    @RequestMapping(value = { "/", "/start" })
-    public String start() {
-        return "start";
+    @RequestMapping(value = { "/my_cv" })
+    public String my_cv() {
+        return "my_cv";
+    }
+
+    @RequestMapping(value = { "/", "/start_page" })
+    public String MyCV() {
+        return "start_page";
     }
 }

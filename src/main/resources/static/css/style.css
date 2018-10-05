@@ -1,20 +1,9 @@
-h1 {
+header{
     color: green;
-    }
-
-h2 {
-    color: black;
-    }
-
-table {
-    border-collapse: collapse;
-    color: green;
-    }
-
-table th, table td {
-    padding:5px;
-    }
-
-a {
-    color: black;
+    text-align: center;
+    font-family:verdana;
+}
+img{
+    width:48px;
+    height:48px
 }
