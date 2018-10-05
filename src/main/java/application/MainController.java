@@ -17,4 +17,9 @@ public class MainController {
     public String MyCV() {
         return "start_page";
     }
+
+    @RequestMapping(value = { "/", "/proposals" })
+    public String proposals() {
+        return "proposals";
+    }
 }
