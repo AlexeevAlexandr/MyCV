@@ -1,12 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Proposals</title>
 </head>
-<body>
+<body style="align-content: center">
+<div>
+    <h1>List of registered visitors:</h1>
+    <a href="registration">Click here to register</a>
+    <table border="1">
+        <tr>
+            <th>Id</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Date</th>
+        </tr>
+        <tr th:each ="person : ${persons}">
+            <td th:utext="${person.id}">...</td>
+            <td th:utext="${person.firstName}">...</td>
+            <td th:utext="${person.lastName}">...</td>
+            <td th:utext="${person.email}">...</td>
+            <td th:utext="${person.date}">...</td>
+        </tr>
+    </table>
+</div>
+<hr>
 <form action="/action_page.php">
-    <textarea name="message" rows="10" cols="30">some text</textarea>
+    <label>
+        <textarea name="message" rows="10" cols="30">some text</textarea>
+    </label>
     <br>
     <input type="submit">
 </form>
