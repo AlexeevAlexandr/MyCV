@@ -27,7 +27,7 @@ public class DataBaseConnect {
     public DataBaseConnect(){
     }
 
-    DataBaseConnect(String firstName, String lastName, String email, String date){
+    public DataBaseConnect(String firstName, String lastName, String email, String date){
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
@@ -72,15 +72,6 @@ public class DataBaseConnect {
 
     public void setDate(String date) {
         this.date = date;
-    }
-
-    @Override
-    public String toString() {
-        return "ID: " + getId() + "\n" +
-                "First Name: " + getFirstName() + "\n" +
-                "Last Name: " + getLastName() + "\n" +
-                "Email: " + getEmail() + "\n" +
-                "Date of registration: " + getDate();
     }
 }
 
