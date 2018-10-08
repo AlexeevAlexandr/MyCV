@@ -1,9 +1,20 @@
 header{
     color: green;
     text-align: center;
-    font-family:verdana;
+    font-family: verdana, serif;
 }
 img{
     width:48px;
     height:48px
+}
+
+article{
+    background: #d2d0d2;
+    position: marker;
+    width: auto;
+    height: auto;
+}
+
+.a{
+    text-align: center;
 }
