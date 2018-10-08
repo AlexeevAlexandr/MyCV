@@ -8,7 +8,8 @@
 <body style="align-content: center">
 <div>
     <h1>List of registered visitors:</h1>
-    <a href="addPerson">Click here to register</a>
+    <a href="addPerson" title="Registration">Click here to register</a>
+    <a href="start_page" title="Return to the start page">Start Page</a>
     <table border="1">
         <tr>
             <th>Id</th>
@@ -27,12 +28,14 @@
     </table>
 </div>
 <hr>
-<form action="/action_page.php">
+<p>Using the form below, you can write to me a letter </p>
+<form action="mailto:alexandralexeevkiev@gmail.com" method="post" enctype="text/plain">
     <label>
-        <textarea name="message" rows="10" cols="30">some text</textarea>
+        <textarea name="message" rows="10" cols="30"></textarea>
     </label>
     <br>
-    <input type="submit">
+    <input type="submit" th:value="Send">
+    <input type="reset" th:value="Reset">
 </form>
 </body>
 </html>
