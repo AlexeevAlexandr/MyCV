@@ -6,10 +6,10 @@
         <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
         <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
         <property name="hibernate.connection.url">
-            jdbc:postgresql://localhost:5432/demo?serverTimezone=UTC&amp;useUnicode=true&amp;characterEncoding=UTF-8&amp;autoReconnect=true&amp;useSSL=false
+            jdbc:postgresql://ec2-54-217-235-137.eu-west-1.compute.amazonaws.com:5432/d9iae62bnkqsr0?sslmode=require?serverTimezone=UTC&amp;useUnicode=true&amp;characterEncoding=UTF-8&amp;autoReconnect=true&amp;useSSL=false
         </property>
-        <property name="hibernate.connection.username">root</property>
-        <property name="hibernate.connection.password">111111</property>
+        <property name="hibernate.connection.username">dnahqmysygrioz</property>
+        <property name="hibernate.connection.password">f740e8c1f949ece81a01db1231563400abf0d27cae696c4165a73748f39a2fa3</property>
 
         <!-- List of XML mapping files -->
         <mapping resource="DataBaseConnect.hbm.xml"/>
