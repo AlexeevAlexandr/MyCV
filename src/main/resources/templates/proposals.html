@@ -5,11 +5,22 @@
     <title>Proposals</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
+<style>
+    #b{
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url("aa.jpg");
+    }
+</style>
+<body id="b">
 <div>
+    <strong>
+        <a href="addPerson" title="Registration">Click here to register</a>
+        <a href="start_page" title="Return to the start page">Start Page</a>
+    </strong>
+    <br>
     <h1>List of registered visitors:</h1>
-    <a href="addPerson" title="Registration">Click here to register</a>
-    <a href="start_page" title="Return to the start page">Start Page</a>
     <table border="1">
         <tr>
             <th>Id</th>
@@ -27,7 +38,7 @@
         </tr>
     </table>
 </div>
-<hr>
+<br>
 <p>Using the form below, you can write to me a letter </p>
 <form action="mailto:alexandralexeevkiev@gmail.com" method="post" enctype="text/plain">
     <label>

@@ -34,6 +34,11 @@ public class MainController {
         return "page";
     }
 
+    @RequestMapping(value = { "/about_me" })
+    public String about_me() {
+        return "about_me";
+    }
+
     @RequestMapping(value = { "/proposals" }, method = RequestMethod.GET)
     public String personList(Model model) {
         model.addAttribute("persons", commands.list());

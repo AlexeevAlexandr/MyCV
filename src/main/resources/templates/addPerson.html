@@ -5,33 +5,82 @@
     <title>Add Person</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
+<style>
+    input[type=text], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
 
+    input[type=submit] {
+        width: 100%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type=reset] {
+        width: 100%;
+        background-color: dimgrey;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    a [href=start_page]{
+        width: 100%;
+        background-color: white;
+        color: blue;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    div {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+    }
+</style>
+<body>
+<a href="start_page">TO START PAGE</a>
+<br>
+<div>
 <form th:action="@{/addPerson}" th:object="${personForm}" method="POST">
-    First Name:
-    <label>
-        <input type="text" th:field="*{firstName}" required minlength="2" maxlength="50" placeholder="max 50 characters"/>
-    </label>
-    <br/>
-    Last Name:
-    <label>
-        <input type="text" th:field="*{lastName}" required minlength="2" maxlength="50" placeholder="max 50 characters"/>
-    </label>
-    <br/>
-    Email:
-    <label>
-        <input type="text" th:field="*{email}" required minlength="2" maxlength="50" placeholder="max 50 characters"/>
-    </label>
-    <br/>
-    <input type="submit" value="Add" />
-    <label>
-        <input type="reset" value="Clear" />
-    </label>
+    <fieldset>
+        <legend>Registration table:</legend>
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" th:field="*{firstName}" required minlength="2" maxlength="50" placeholder="your name, max 50 characters" size="50"/>
+
+        <label for="fname">Last Name:</label>
+        <input type="text" th:field="*{lastName}" required minlength="2" maxlength="50" placeholder="yous last name, max 50 characters" size="50"/>
+
+        <label for="fname">Email:</label>
+        <input type="text" th:field="*{email}" required minlength="2" maxlength="50" placeholder="your email, max 50 characters" size="50"/>
+
+    <input type="submit" value="ADD" />
+        <input type="reset" value="CLEAR" />
+        <br>
+    </fieldset>
 </form>
 <br>
 <div th:if="${errorMessage}" th:utext="${errorMessage}"
      style="color:red;font-style:italic;">
     ...
+</div>
 </div>
 </body>
 </html>

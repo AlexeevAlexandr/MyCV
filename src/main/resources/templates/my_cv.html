@@ -4,17 +4,25 @@
     <meta charset="UTF-8" />
     <title>ABOUT ME</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 </head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<body style="background-image:url('a.jpg'); text-color:white">
+<style>
+    #a{
+        font-size: 120%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url("underwater.jpg");
+    }
+</style>
+<body id="a">
 <nav>
-    <a href="start_page" title="Return to the start page">Start Page</a>
-    <a th:href="Alexandr_Alexeev_Java_Developer.pdf" target="_blank" title="Download or print CV">Download CV</a>
+    <strong>
+        <a href="start_page" title="Return to the start page">Start Page</a>
+        <a th:href="Alexandr_Alexeev_Java_Developer.pdf" target="_blank" title="Download or print CV">Download CV</a>
+    </strong>
 </nav>
 <hr>
-<br>
-<header>Some of my projects:</header>
+<header style="text-align: center"><h2>Some of my projects:</h2></header>
 <hr>
 <article>
     The program generates 100K random lines, the lines are divided into the entered data and queries. Data types have three subtypes. Step by step, all queries looking for matches of types, when the type is matched - counts the points.<br>
@@ -40,28 +48,15 @@
     Within the training was created a part of the program for working with the bank account.<br>
     Github: <a href="https://github.com/AlexeevAlexandr/demo/blob/master/src/AccountMaangerTraining/AccountManager.java" target="_blank">https://github.com/AlexeevAlexandr/demo/blob/master/src/AccountMaangerTraining/AccountManager.java</a><br>
     <br>
-    Creating integration tests, JUNIT tests, tests with Mockito.<br>
-    Has acquired skills of understanding OOP, processing Exceptions, Collection Framework, connection third-party libraries using POM file or downloaded libraries from a file.<br>
-    Work with matrix, multithreaded programming, package IO and NIO (input — output data).<br>
-    Trained at Hackerrank, Codewars and Codility.<br>
-    <br>
-    Kontakt Handy LTD (December 2013 — present time)<br>
-    Chief Sales and Purchasing Manager. Created and implemented the automation of sales through the site, looked for and studied the demand for new products.<br>
-    For the time of my work I acquired the skills to achieve the goal and work in the team.<br>
-    <br>
-    LANGUAGES<br>
-    English — intermediate. Russian, Ukrainian — native.<br>
-    <br>
-    EDUCATION<br>
-    w3schools
+    Where I study programming languages::<br>
+    <a href="https://www.w3schools.com/" target="_blank">w3schools</a><br>
     2017-2018 <a href="https://juja.com.ua/" target="_blank">Juja Online training center</a>. Achieved qualification Java Developer.<br>
-    2010-2015 <a href="http://www.vtei.com.ua/index.php/ua/" target="_blank">Vinnitskiy Trading Economic University. Bachelor’s degree in enterprise economics</a><br>
     <br>
-    Personal qualities<br>
-    Good Communication skill, flexibility, patient, positive person, team player.<br>
+    Where I train:<br>
+    Hackerrank, Codewars, Codility and some own projects.<br>
 </article>
 <hr>
-<p class="a">You can download or print CV using the link at the top of the page, or click
+<p style="text-align: center">You can download or print CV using the link at the top of the page, or click
     <a th:href="Alexandr_Alexeev_Java_Developer.pdf" target="_blank" title="Download or print CV">here</a>.</p>
 <hr>
 </body>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>About Me</title>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    #c{
+        font-size: 150%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url("java.jpg");
+
+</style>
+<body id="c">
+<nav>
+    <a href="my_cv" title="Link to CV page">My CV</a>
+    <a href="start_page" title="To start page">Start Page</a>
+    <a href="proposals" title="FAQ">FAQ</a>
+</nav>
+<hr>
+<header style="text-align: center">ABOUT ME</header>
+<hr>
+<img th:src="programming.gif" alt="Computer Man">
+<div>
+<p>My name's Alexander<br>
+    I like coding, because it's very interesting and exciting.<br>
+    I like to create interesting things, learn something new improve existing knowledge.<br>
+    I started my learning with pure Java and in a while additionally learned Spring, Spring Boot, Hibernate and JDBC.<br>
+    After some time i gained experience in front-end part using Thymeleaf, HTML and CSS.<br>
+    Currently, I am learning all this deeper, looking for new technologies to improve my knowledge and understanding of programming.<br>
+</p>
+<p>What i using:<br>
+    Java Core, Swing, JavaFX, Spring, Spring Boot, Hibernate, JDBC, lombok<br>
+    Thymeleaf, HTML<br>
+    Maven, Wildfly<br>
+    Github, Docker, Heroku<br>
+    JUnit, Mockito<br>
+    IntelliJ, NetBeans<br>
+    PostgreSQL, MySQL, SQLServer<br>
+</p>
+</div>
+<p style="text-align: center">It was a brief essay about me.</p>
+<p style="text-align: center">At the top of the page there is a link to my CV or click
+    <a th:href="my_cv" title="Link to CV page">here</a>.</p>
+<footer style="position: absolute; bottom: 20px; left: 25%">
+    <i>Made by Java, JDBC, Hibernate, Spring Boot, Thymeleaf, HTML and CSS. Deployed on Heroku.</i>
+</footer>
+</body>
+</html>
