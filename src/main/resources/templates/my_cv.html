@@ -59,5 +59,29 @@
 <p style="text-align: center">You can download or print CV using the link at the top of the page, or click
     <a th:href="Alexandr_Alexeev_Java_Developer.pdf" target="_blank" title="Download or print CV">here</a>.</p>
 <hr>
+<SCRIPT type="text/javascript">
+    function passWord() {
+        var testV = 1;
+        var pass1 = prompt('Enter password to access');
+        while (testV < 3) {
+        if (!pass1)
+            history.go(-1);
+        if (pass1.toLowerCase() == "teacher") {
+            window.open('Alexandr_Alexeev_Java_Developer.pdf');
+            break;
+        }
+        testV+=1;
+        var pass1 = prompt('Access Denied - Password Incorrect, You can request a password via the FAQ form');
+    }
+    if (pass1.toLowerCase()!="password" & testV ==3)
+        history.go(-1);
+    return " ";
+}
+</SCRIPT>
+<CENTER>
+    <FORM>
+        <input type="text" value="Alexandr_Alexeev_Java_Developer.pdf" onClick="passWord()">
+    </FORM>
+</CENTER>
 </body>
 </html>
