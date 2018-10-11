@@ -13,6 +13,7 @@
 
         <!-- List of XML mapping files -->
         <mapping resource="DataBaseConnect.hbm.xml"/>
+        <mapping resource="DataBasePassword.hbm.xml"/>
 
     </session-factory>
 </hibernate-configuration>

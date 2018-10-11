@@ -21,6 +21,16 @@ public class Commands {
         return null;
     }
 
+    public List getPassword() {
+        try (SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
+             Session session = sessionFactory.openSession()) {
+            return session.createQuery("SELECT password FROM Password WHERE id=1").list();
+        } catch (HibernateException e) {
+            e.getMessage();
+        }
+        return null;
+    }
+
     public void add(String firstName, String lastName, String email, String date) throws Exception {
         try (SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
              Session session = sessionFactory.openSession())
