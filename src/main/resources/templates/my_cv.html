@@ -17,11 +17,10 @@
 <body id="a">
 <nav>
     <strong>
-        <a href="start_page" title="Return to the start page">Start Page</a>&nbsp&nbsp
+        <a th:href="start_page" title="Return to the start page">Start Page</a>&nbsp&nbsp
+            <button type="button" value="Download CV" onClick="passWord()">Download CV</button>
     </strong>
 </nav>
-<hr>
-<header><button value="Alexandr_Alexeev_Java_Developer.pdf" style="float: left" onClick="passWord()">Download CV</button><h2 style="text-align: center">Some of my projects:</h2></header>
 <hr>
 <article>
     The program generates 100K random lines, the lines are divided into the entered data and queries. Data types have three subtypes. Step by step, all queries looking for matches of types, when the type is matched - counts the points.<br>
@@ -57,23 +56,21 @@
 <hr>
 <p style="text-align: center">You can download or print CV using the button at the top of the page</p>
 <hr>
-<script type="text/javascript">
+<SCRIPT>
     function passWord() {
-        var testV = 0;
-        var password = Packages.commands.Commands.getPassword();
-        var pass1 = prompt('Enter password to access');
+        var testV = 1;
+        var pass1 = prompt('Please Enter Your Password');
         while (testV < 3) {
-
-        if (pass1.toLowerCase() === password) {
-            window.open('Alexandr_Alexeev_Java_Developer.pdf');
-            break;
+            if (pass1.toLowerCase() === "123") {
+                window.open('Alexandr_Alexeev_Java_Developer.pdf');
+                break;
+            }
+            testV ++;
+            pass1 = prompt('Access Denied - If you haven\'t a password, make a request from the FAQ form');
         }
-        testV+=1;
-        pass1 = prompt('Access Denied - Password Incorrect\nYou can request a password via the FAQ form');
+        if (pass1.toLowerCase()!=="password" && testV ===3)
+            history.go(0);
     }
-    if (pass1.toLowerCase()!=="password" && testV ===3)
-    return " ";
-}
-</script>
+</SCRIPT>
 </body>
 </html>

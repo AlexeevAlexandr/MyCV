@@ -1,7 +1,6 @@
 package application;
 
 import commands.Commands;
-import dataBaseConnect.Password;
 import dataBaseConnect.PersonForm;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
@@ -17,22 +16,17 @@ import java.util.Date;
 public class MainController {
     private Commands commands = new Commands();
 
-    @Value("Incorrect email address!")
+    @Value("Incorrect password!")
     private String errorMessageEmail;
 
     @RequestMapping(value = { "/", "/start_page" })
-    public String MyCV() {
+    public String startPage() {
         return "start_page";
     }
 
     @RequestMapping(value = { "/my_cv" })
     public String my_cv() {
         return "my_cv";
-    }
-
-    @RequestMapping(value = { "/page" })
-    public String page() {
-        return "page";
     }
 
     @RequestMapping(value = { "/about_me" })
@@ -71,5 +65,4 @@ public class MainController {
         }
 
     }
-
 }

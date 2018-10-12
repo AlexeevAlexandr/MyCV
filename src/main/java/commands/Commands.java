@@ -8,7 +8,7 @@ import org.hibernate.cfg.Configuration;
 
 import java.util.List;
 
-public class Commands {
+public class Commands  {
     private Transaction transaction = null;
 
     public List list() {
