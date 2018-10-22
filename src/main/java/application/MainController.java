@@ -16,7 +16,7 @@ import java.util.Date;
 public class MainController {
     private Commands commands = new Commands();
 
-    @Value("Incorrect password!")
+    @Value("Incorrect email!")
     private String errorMessageEmail;
 
     @RequestMapping(value = { "/", "/start_page" })
