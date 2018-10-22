@@ -63,6 +63,5 @@ public class MainController {
             model.addAttribute("errorMessage", errorMessageEmail);
             return "addPerson";
         }
-
     }
 }
