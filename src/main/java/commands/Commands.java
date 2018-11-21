@@ -1,5 +1,6 @@
 package commands;
 
+import dataBaseConnect.DataBaseConnect;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -36,7 +37,7 @@ public class Commands  {
              Session session = sessionFactory.openSession())
         {
             transaction = session.beginTransaction();
-            dataBaseConnect.DataBaseConnect dataBaseConnect = new dataBaseConnect.DataBaseConnect(firstName, lastName, email, date);
+            DataBaseConnect dataBaseConnect = new DataBaseConnect(firstName, lastName, email, date);
             session.save(dataBaseConnect);
             transaction.commit();
         } catch (Exception e) {
